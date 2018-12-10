@@ -8,21 +8,21 @@ import requests
 import datetime
 
 ### SET the network prefix label
-net_ver=":Stagenet: "
+net_ver = ":Stagenet: "
 dbFile = "prodState.sqlite3"
 prodFile = "producers.json"
 
 # MAINNET WEBHOOK - Replace below with your unique URL provided by Slack
 #webhook_url = "https://hooks.slack.com/services/XXXXXXXXXXXXXXXXX"
 
-f=open(prodFile)
-data=f.read()
+f = open(prodFile)
+data = f.read()
 p = json.loads(data)
 
 rows = len(p['rows'])
 #print "Number of json records:",rows
 print ""
-rows=rows-1
+rows = rows - 1
 
 print str(datetime.datetime.now()) + ": Checking to see if database",dbFile,"exists...",
 exists = os.path.isfile(dbFile)
