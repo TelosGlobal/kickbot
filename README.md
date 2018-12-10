@@ -35,6 +35,8 @@ Integrates with Slack
 - 1st time run will only create a state db
 - subsequent runs will chack against state and push a status message to Slack on reg & unreg events
 
+## Automate as a cron job
+
 `sudo crontab -e `
 
 *setup a cron job to run every minute*
