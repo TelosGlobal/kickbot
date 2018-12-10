@@ -12,7 +12,9 @@ Integrates with Slack
 - Python modules (see py script below)
 - nodeos running locally
 - Slack "incoming webhook" application enabled on target Slack account
-		https://api.slack.com/incoming-webhooks
+
+	For more info: https://api.slack.com/incoming-webhooks
+
 - Slack unique Webhook URL (embeds access token, target slack team & channel, and Bot meta)
 
 
